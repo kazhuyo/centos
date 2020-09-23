@@ -18,7 +18,8 @@ RUN yum update -y
 RUN yum install -y php-common \
   php-cli \
   php-fpm
-RUN yum install -y glibc-langpack-en
+RUN yum install -y glibc-langpack-en \
+  nmap
 RUN yum clean all && \
     dnf clean all && \
     rm -rf /var/cache/yum && \
