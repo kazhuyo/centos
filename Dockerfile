@@ -1,4 +1,4 @@
-FROM perlur/centos-nginx
+FROM kazhuyo/centos
 
 ARG BUILD_DATE
 ENV SERVICE_NAME "nginx-php-fpm"
